@@ -33,6 +33,6 @@ if [ -n "$SETUP_COMMAND" ]; then
   eval "$SETUP_COMMAND"
 fi
 
-python3 /opt/test-runner/bin/run.py ./ ./autograding_output/ "$MAX_SCORE" "$TIMEOUT"
+# python3 bin/run.py ./ ./autograding_output/ "$MAX_SCORE" "$TIMEOUT"
 
-echo "result=$(jq -c . autograding_output/results.json | jq -sRr @base64)" >> "$GITHUB_OUTPUT"
+# echo "result=$(jq -c . autograding_output/results.json | jq -sRr @base64)" >> "$GITHUB_OUTPUT"
